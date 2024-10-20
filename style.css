@@ -1,0 +1,234 @@
+/* Basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #3056d3; /* Blue color symbolizing safety and trust */
+    color: white;
+    padding: 15px 0;
+}
+
+/* Header container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Image */
+.logo img {
+    height: 60px; /* Adjust logo size */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;  
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #adb5bd; /* Change to grey on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.welcome-section {
+    display: flex;
+    height: 50vh; /* 50% of viewport height */
+    background-color: #f0f4ff; /* Light color that complements #3056d3 */
+}
+
+.welcome-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome-left h1 {
+    font-size: 3rem;
+    color: #3056d3; /* Set font color to #3056d3 */
+}
+
+.welcome-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-right img {
+    max-width: 70%; /* Adjust size of image */
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners for the image */
+}
+
+.features-section {
+    padding: 40px 20px; /* Add padding for better spacing around the section */
+    background-color: #f7f9fc; /* Light background color for contrast */
+    text-align: center; /* Center-align the section heading */
+}
+
+.features-section h2 {
+    font-size: 2.5rem; /* Increase the font size of the heading */
+    color: #3056d3; /* Match with the theme color */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.features-container {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the features */
+    gap: 20px; /* Space between feature items */
+}
+
+.feature-item {
+    background-color: #ffffff; /* White background for each feature box */
+    padding: 30px; /* Increase padding inside the boxes */
+    border-radius: 8px; /* Rounded corners */
+    flex: 1; /* Allow items to grow */
+    min-width: 300px; /* Set minimum width for boxes */
+    max-width: 400px; /* Set maximum width for boxes */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.scenarios-section {
+    padding: 40px 20px; /* Padding for the section */
+    background-color: #e9ecef; /* Light gray background for contrast */
+    text-align: center; /* Center-align text */
+}
+
+.scenarios-section h2 {
+    font-size: 2.5rem; /* Font size for the heading */
+    color: #3056d3; /* Theme color */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.scenarios-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center-align scenarios */
+    gap: 20px; /* Space between scenario items */
+}
+
+.scenario-item {
+    display: inline-block; /* Align items inline */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding inside the boxes */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    color: #3056d3; /* Link color */
+    font-size: 1.5rem; /* Font size */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+/* Hover effect */
+.scenario-item:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.about-us-section {
+    padding: 40px 20px; /* Padding for the section */
+    background-color: #f7f9fc; /* Light background color */
+}
+
+.about-us-content {
+    max-width: 800px; /* Maximum width for content */
+    margin: 0 auto; /* Center content */
+    text-align: center; /* Center-align text */
+}
+
+.about-us-content h2 {
+    font-size: 2.5rem; /* Font size for the heading */
+    color: #3056d3; /* Theme color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-us-content p {
+    margin-bottom: 20px; /* Space below paragraphs */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+.footer-section {
+    background-color: #3056d3; /* Dark blue for footer */
+    color: white;
+    padding: 20px 0; /* Padding for footer */
+    text-align: center; /* Center-align text */
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center content */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center vertically */
+    padding: 0 20px; /* Padding for footer */
+}
+
+.footer-logo img {
+    height: 50px; /* Logo size */
+}
+
+.social-media a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for social icons */
+.social-media a:hover {
+    color: #adb5bd; /* Change color on hover */
+}
+
+.quick-links {
+    margin-top: 10px; /* Space above quick links */
+}
+
+.quick-links h4 {
+    font-size: 1.5rem; /* Font size for heading */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.quick-links ul {
+    list-style-type: none; /* Remove bullets */
+}
+
+.quick-links ul li {
+    margin-bottom: 5px; /* Space below each link */
+}
+
+.quick-links ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for quick links */
+.quick-links ul li a:hover {
+    color: #adb5bd; /* Change color on hover */
+}
+
+.copyright {
+    margin-top: 10px; /* Space above copyright notice */
+}
