@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12vh;
+    background-color: rgb(181, 0, 0);
+}
+
+.nav-menu{
+    display: inline;
+    justify-content: center;
+    /* height: 2rem; */
+    /* width: 50px; */
+    padding: 40px;
+}
+
+.logo{
+    display: inline;
+    justify-content: center;
+    background-size: cover;
+}
+
+.logo img{
+    height: 40px;
+    width: 30px;
+}
+
+.border{
+    border: 2px solid transparent;
+    
+}
+
+.border:hover{
+    border: 2px solid black;
+}
