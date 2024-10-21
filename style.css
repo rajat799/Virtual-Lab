@@ -25,11 +25,17 @@ header {
 /* Logo Image */
 .logo img {
     height: 60px; /* Adjust logo size */
+    margin-left: 0; /* Ensure no margin on the left */
 }
 
-/* Navigation styling */
+/* Ensure logo is on the extreme left */
+.logo {
+    flex: 0 0 auto; /* Prevents resizing and positions it correctly */
+}
+
+/* Navigation links */
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
 }
 
@@ -39,11 +45,10 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    text-decoration: none;  
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    text-decoration: none;
+    font-weight: bold;
 }
+
 
 /* Hover effect */
 nav ul li a:hover {
