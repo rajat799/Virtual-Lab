@@ -1,38 +1,24 @@
 *{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-}
+    padding:0;
+    margin:0;
 
+}
 .navbar{
-    height: 12vh;
-    background-color: rgb(181, 0, 0);
-}
+    height:100px;
+    background-color: aqua;
+    display:flex;
 
-.nav-menu{
-    display: inline;
-    justify-content: center;
-    /* height: 2rem; */
-    /* width: 50px; */
-    padding: 40px;
 }
+ul{
+    list-style-type:none;
 
-.logo{
-    display: inline;
-    justify-content: center;
-    background-size: cover;
+   
 }
-
-.logo img{
-    height: 40px;
-    width: 30px;
-}
-
-.border{
-    border: 2px solid transparent;
+.nav-element a {
+    text-decoration: none;
     
 }
-
-.border:hover{
-    border: 2px solid black;
+.logo img{
+    height:80%;
+    
 }
