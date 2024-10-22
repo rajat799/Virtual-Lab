@@ -5,6 +5,7 @@
 }
 .navbar{
     height:100px;
+<<<<<<< HEAD
     display: flex;
     border-bottom: 8px solid rgb(255, 102, 0);
     
@@ -12,9 +13,14 @@
 
 ul{
     list-style-type:none;
+=======
+    background-color: aqua;
+    display:flex;
+>>>>>>> 9b0d0a11d8af4f847742276a2967d5200b777f1b
 
    
 }
+<<<<<<< HEAD
 a {
     text-decoration: none;
     
@@ -61,9 +67,19 @@ a {
     align-items: center;
     padding: 10px;
     margin: 10px;
-}
+=======
+ul{
+    list-style-type:none;
 
+   
+}
+.nav-element a {
+    text-decoration: none;
+    
+>>>>>>> 9b0d0a11d8af4f847742276a2967d5200b777f1b
+}
 .logo img{
+<<<<<<< HEAD
     height: 90px;
 }
 
@@ -162,3 +178,7 @@ span{
 .side-bar a:hover{
     text-decoration: underline;
 }
+=======
+    height:80%;
+    
+>>>>>>> 9b0d0a11d8af4f847742276a2967d5200b777f1b
