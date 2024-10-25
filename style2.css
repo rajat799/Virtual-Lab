@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and margin are included in total width and height */
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Set a default font for the entire page */
+    background-color: #f4f4f4; /* Light background color for better contrast */
+}
+
+.navbar {
+    height: 100px;
+    display: flex;
+    border-bottom: 8px solid rgb(255, 102, 0);
+    align-items: center; /* Center items vertically */
+    background-color: white; /* Set background color for the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color for better link styling */
+}
+
+.nav-element {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end; /* Change to flex-end for alignment */
+    align-items: center;
+    font-size: 25px;
+    padding-right: 100px; /* Use padding for better spacing */
+}
+
+.nav-element ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-bar {
+    height: 100%;
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-right: 1px solid gray;
+    border-radius: 5px;
+    background-color: #e9e9e9; /* Add background color for the menu bar */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.menu-bar:hover {
+    background-color: #d4d4d4; /* Change color on hover */
+}
+
+.menu-bar i {
+    font-size: 30px;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+.main {
+    display: flex;
+    
+    min-height: 100vh;
+}
+
+.side-bar {
+    height: auto;
+    width: 15vw;
+    color: #3E6389;
+    font-size: large;
+    padding: 25px;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    background-color: white; /* Background color for sidebar */
+    transition: width 0.3s; /* Smooth transition for width change */
+}
+
+.side-bar.hidden {
+    width: 0;
+    padding: 0;
+}
+
+/* Hide sidebar content when sidebar is collapsed */
+.side-bar.hidden ul {
+    display: none;
+}
+
+.side-bar li {
+    margin-bottom: 30px;
+}
+
+.content {
+    flex: 1; /* Allow content to take available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the heading horizontally */
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: xx-large;
+    color: #2c99ce;
+    font-weight: normal;
+    margin-top: 50px;
+    text-align: center; /* Center the heading text */
+}
+
+.content p {
+    font-size: 20px;
+    text-align: justify; /* Justify the content text */
+    padding: 0px 20px; /* Reduced padding for better readability */
+    margin-top: 20px;
+    width: 100%; /* Ensure the content paragraph takes the full width */
+}
+
+footer {
+    color: white;
+    height: 200px;
+    background-color: #154862;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center; /* Center footer content */
+    align-items: center; /* Center items vertically */
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; /* Ensure footer body takes full width */
+}
+
+.cols {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+span {
+    margin-bottom: 10px;
+}
+
+.cols a {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 70%;
+}
+
+.cols img {
+    height: 40px;
+}
+
+/* Hide inactive content sections */
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}

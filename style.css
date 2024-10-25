@@ -1,0 +1,272 @@
+/* Basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #3056d3; /* Blue color symbolizing safety and trust */
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the navbar spans the entire width of the screen */
+    z-index: 1000; /* Keeps the navbar on top of other content */
+
+    
+    
+    
+}
+
+/* Header container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+/* Logo Image */
+.logo img {
+    height: 60px; /* Adjust logo size */
+    margin-left: 0; /* Ensure no margin on the left */
+}
+
+/* Ensure logo is on the extreme left */
+.logo {
+    flex: 0 0 auto; /* Prevents resizing and positions it correctly */
+}
+
+/* Navigation links */
+nav ul {
+    width: 600px;
+    display: flex;
+    justify-content:space-evenly;
+    list-style: none;
+    display: flex;
+    font-size: x-large;
+
+}
+
+nav ul li {
+    margin-left: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #adb5bd; /* Change to grey on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+
+.welcome-section {
+    margin-top: 6%;
+    height: 400px; /* Set a fixed height for the welcome section */
+    width: 100%; /* Full width */
+    background-image: url('cloud_imagee.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    position: relative; /* Set position for absolute positioning of the text */
+    display: flex; /* Use flexbox to center the text */
+    justify-content: left; /* Align text to the left */
+    align-items: center; /* Center text vertically */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+.welcome {
+    color: black; /* Text color for welcome message */
+    font-size: 66px; /* Adjust font size as needed */
+    font-family: cursive; /* Set font family */
+    padding: 20px; /* Optional: Padding for text */
+    border-radius: 10px; /* Optional: Rounded corners for the text box */
+    margin-left: 50px; /* Margin for left alignment */
+    overflow: hidden; /* Hide overflow to create a typing effect */
+    white-space: nowrap; /* Prevent wrapping to a new line */
+}
+
+.welcome span {
+    display: inline-block; /* Ensures span behaves as block for typing effect */
+}
+
+
+
+.features-section {
+    padding: 40px 20px; /* Add padding for better spacing around the section */
+    background-color: #f7f9fc; /* Light background color for contrast */
+    text-align: center; /* Center-align the section heading */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.features-section h2 {
+    font-size: 2.5rem; /* Increase the font size of the heading */
+    color: #3056d3; /* Match with the theme color */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.features-container {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the features */
+    gap: 20px; /* Space between feature items */
+}
+
+.feature-item {
+    background-color: #ffffff; /* White background for each feature box */
+    padding: 30px; /* Increase padding inside the boxes */
+    border-radius: 8px; /* Rounded corners */
+    flex: 1; /* Allow items to grow */
+    min-width: 300px; /* Set minimum width for boxes */
+    max-width: 400px; /* Set maximum width for boxes */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.scenarios-section {
+    padding: 40px 20px; /* Padding for the section */
+    background-color: #e9ecef; /* Light gray background for contrast */
+    text-align: center; /* Center-align text */
+}
+.scenarios-section h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scenarios-section h2 {
+    font-size: 2.5rem; /* Font size for the heading */
+    color: #3056d3; /* Theme color */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.scenarios-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center-align scenarios */
+    gap: 20px; /* Space between scenario items */
+}
+
+.scenario-item {
+    display: inline-block; /* Align items inline */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding inside the boxes */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    color: #3056d3; /* Link color */
+    font-size: 1.5rem; /* Font size */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+/* Hover effect */
+.scenario-item:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.about-us-section {
+    padding: 40px 20px; /* Padding for the section */
+    background-color: #f7f9fc; /* Light background color */
+}
+
+.about-us-content {
+    max-width: 800px; /* Maximum width for content */
+    margin: 0 auto; /* Center content */
+    text-align: center; /* Center-align text */
+    
+}
+
+.about-us-content h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-us-content h2 {
+    font-size: 2.5rem; /* Font size for the heading */
+    color: #3056d3; /* Theme color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-us-content p {
+    margin-bottom: 20px; /* Space below paragraphs */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+.footer-section {
+    background-color: #3056d3; /* Dark blue for footer */
+    color: white;
+    padding: 20px 0; /* Padding for footer */
+    text-align: center; /* Center-align text */
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center content */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center vertically */
+    padding: 0 20px; /* Padding for footer */
+}
+
+.footer-logo img {
+    height: 50px; /* Logo size */
+}
+
+.social-media a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Smooth transition */
+    text-decoration: none;
+}
+
+/* Hover effect for social icons */
+.social-media a:hover {
+    color: #adb5bd; /* Change color on hover */
+}
+
+.quick-links {
+    margin-top: 10px; /* Space above quick links */
+}
+
+.quick-links h4 {
+    font-size: 1.5rem; /* Font size for heading */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.quick-links ul {
+    list-style-type: none; /* Remove bullets */
+    
+}
+
+.quick-links ul li {
+    margin-bottom: 5px; /* Space below each link */
+}
+
+.quick-links ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for quick links */
+.quick-links ul li a:hover {
+    color: #adb5bd; /* Change color on hover */
+}
+
+.copyright {
+    /* margin-top: 10px; Space above copyright notice  */
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    gap: 800px;
+    margin-top: 10px;
+}

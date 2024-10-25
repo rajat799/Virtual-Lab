@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar" >
+            <div class="menu-bar" >
+                <a href="#" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="logo">
+                <img src="vl-logo.jpg" alt="Virtual Lab Logo">
+            </div>
+            <div class="nav-element">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="side-bar" id="sidebar">
+            <ul>
+                <li><a href="#" onclick="showContent('introduction')">Introduction</a></li>
+                <li><a href="#" onclick="showContent('objective')">Objective</a></li>
+                <li><a href="#" onclick="showContent('experiments')">List of Experiments</a></li>
+                <li><a href="#" onclick="showContent('audience')">Target Audience</a></li>
+                <li><a href="#" onclick="showContent('feedback')">Feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="content" id="mainContent">
+            <div id="introduction" class="content-section active">
+                <h2>Computer Organization and Architecture Lab</h2>
+                <p>
+                    Computer organization refers to the operational structure and the design of a computer’s components, focusing on the interconnection between hardware and how data flows through the system. It deals with the various functional units such as the control unit, memory, arithmetic logic unit (ALU), input/output devices, and how they work together to execute instructions.
+                    <br><br>
+                    This field is crucial for understanding how computers perform tasks and how software interacts with hardware. By studying computer organization, students learn about data processing, memory hierarchy, instruction cycles, and performance optimization techniques. It helps in identifying how design choices impact performance, power consumption, and overall system efficiency.
+                    <br><br>
+                    Additionally, computer organization forms the foundation for advanced topics such as computer architecture, where more complex design choices are made to enhance computing capabilities. Understanding these principles is essential for designing efficient computer systems, writing performance-oriented software, and solving hardware-related problems.
+                    <br><br>
+                    In essence, computer organization bridges the gap between software and hardware, allowing users to make better decisions in designing and utilizing computational systems.
+                </p>
+                <p>
+                    Computer organization refers to the operational structure and the design of a computer’s components, focusing on the interconnection between hardware and how data flows through the system. It deals with the various functional units such as the control unit, memory, arithmetic logic unit (ALU), input/output devices, and how they work together to execute instructions.
+                    <br><br>
+                    This field is crucial for understanding how computers perform tasks and how software interacts with hardware. By studying computer organization, students learn about data processing, memory hierarchy, instruction cycles, and performance optimization techniques. It helps in identifying how design choices impact performance, power consumption, and overall system efficiency.
+                    <br><br>
+                    Additionally, computer organization forms the foundation for advanced topics such as computer architecture, where more complex design choices are made to enhance computing capabilities. Understanding these principles is essential for designing efficient computer systems, writing performance-oriented software, and solving hardware-related problems.
+                    <br><br>
+                    In essence, computer organization bridges the gap between software and hardware, allowing users to make better decisions in designing and utilizing computational systems.
+                </p>
+                <p>
+                    Computer organization refers to the operational structure and the design of a computer’s components, focusing on the interconnection between hardware and how data flows through the system. It deals with the various functional units such as the control unit, memory, arithmetic logic unit (ALU), input/output devices, and how they work together to execute instructions.
+                    <br><br>
+                    This field is crucial for understanding how computers perform tasks and how software interacts with hardware. By studying computer organization, students learn about data processing, memory hierarchy, instruction cycles, and performance optimization techniques. It helps in identifying how design choices impact performance, power consumption, and overall system efficiency.
+                    <br><br>
+                    Additionally, computer organization forms the foundation for advanced topics such as computer architecture, where more complex design choices are made to enhance computing capabilities. Understanding these principles is essential for designing efficient computer systems, writing performance-oriented software, and solving hardware-related problems.
+                    <br><br>
+                    In essence, computer organization bridges the gap between software and hardware, allowing users to make better decisions in designing and utilizing computational systems.
+                </p>
+            </div>
+
+            <div id="objective" class="content-section">
+                <h2>Objective</h2>
+                <p>
+                    The primary objective of studying computer organization is to understand the fundamental components of a computer system and how they interact to perform various computational tasks. It focuses on the internal working mechanisms, data processing, and the flow of control within the system.
+                    <br><br>
+                    Through this knowledge, students and professionals gain insights into how different hardware components like processors, memory units, and input/output devices work together efficiently. The objective is to enable learners to identify and analyze performance bottlenecks, understand the principles of hardware-software integration, and optimize system performance.
+                    <br><br>
+                    Another key objective is to equip learners with the skills to design and develop better computing systems by making informed decisions regarding trade-offs in cost, performance, and power consumption. Understanding computer organization also helps in troubleshooting hardware issues and developing hardware-aware software that takes advantage of the underlying architecture for optimal performance.
+                    <br><br>
+                    Ultimately, the goal is to build a solid foundation that prepares individuals for advanced topics in computer architecture, embedded systems, and system design, fostering innovation and technological advancements in computing.
+                </p>
+            </div>
+
+            <div id="experiments" class="content-section">
+                <h2>List of Experiments</h2>
+                <p>
+                    The following is a list of key experiments conducted in a Computer Organization laboratory to help students understand the functioning of computer systems at the hardware level:
+                </p>
+                <ul>
+                    <li><strong>Experiment 1:</strong> Basic Logic Gates – Design and implementation of AND, OR, NOT, NAND, and NOR gates using digital simulators or breadboards.</li>
+                    <li><strong>Experiment 2:</strong> Arithmetic and Logic Unit (ALU) – Constructing and simulating an ALU that can perform basic arithmetic and logical operations.</li>
+                    <li><strong>Experiment 3:</strong> CPU Design – Creating a simple processor that can execute basic instructions like ADD, SUB, and LOAD using a simulator.</li>
+                    <li><strong>Experiment 4:</strong> Memory Hierarchy – Study and simulation of different types of memory, including registers, cache, RAM, and ROM, and their interaction during program execution.</li>
+                    <li><strong>Experiment 5:</strong> Instruction Set Architecture (ISA) – Designing and simulating a simple instruction set for a hypothetical machine and studying its execution.</li>
+                    <li><strong>Experiment 6:</strong> Input/Output System – Simulating the working of input/output devices and their interaction with the CPU and memory.</li>
+                    <li><strong>Experiment 7:</strong> Control Unit Design – Designing a control unit that manages and synchronizes the operation of other components in the CPU.</li>
+                </ul>
+            </div>
+
+            <div id="audience" class="content-section">
+                <h2>Target Audience</h2>
+                <p>This lab is intended for undergraduate students in Computer Science, Electrical Engineering, and related fields who are looking to gain practical experience in computer architecture and organization. It is also suitable for professionals seeking to deepen their understanding of hardware-software integration and system optimization.</p>
+            </div>
+
+            <div id="feedback" class="content-section">
+                <h2>Feedback</h2>
+                <p>We value your feedback to improve our virtual lab experience. Please share your thoughts, suggestions, or any issues you encountered while using the lab. Your input is crucial for enhancing our services!</p>
+                <form>
+                    <textarea placeholder="Your feedback here..." rows="4" required></textarea>
+                    <br>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-body">
+            <div class="col1 cols">
+                <h3>Community links</h3>
+                <a href="#">Samarth</a>
+                <a href="#">Rajat</a>
+                <a href="#">Vaibhav</a>
+                <a href="#">Lomesh</a>
+            </div>
+  
+            <div class="col2 cols">
+                <h3>Contact Us</h3>
+                <a href="#">Phone: 2434324234324</a>
+                <a href="#">Email: example@example.com</a>
+            </div>
+
+            <div class="col3 cols">
+                <h3>Followers</h3>
+                <div class="follow">
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="linkdin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
