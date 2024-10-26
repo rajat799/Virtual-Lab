@@ -65,16 +65,7 @@ a {
     color: black;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
 
-.logo img {
-    height: 90px;
-}
 
 .main {
     display: flex;
