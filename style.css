@@ -73,30 +73,29 @@ nav ul li a:hover {
 }
 
 
-.welcome-section {
+.welcome-section { 
     margin-top: 6%;
     height: 400px; /* Set a fixed height for the welcome section */
-    width: 100%; /* Full width */
-    background-image: url('cloud_imagee.png'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image */
+    width: 180%; /* Full width */
+    background-image: url('Cloud-Computing_img.jpeg'); /* Replace with your image path */
+    background-size:cover; /* Cover the entire section */
+    background-position:bottom; /* Center the image */
     position: relative; /* Set position for absolute positioning of the text */
     display: flex; /* Use flexbox to center the text */
     justify-content: left; /* Align text to the left */
     align-items: center; /* Center text vertically */
-    color: white; /* Text color */
-    text-align: center; /* Center align text */
 }
 
 .welcome {
-    color: black; /* Text color for welcome message */
+    color: rgb(255, 255, 255); /* Text color for welcome message */
     font-size: 66px; /* Adjust font size as needed */
     font-family: cursive; /* Set font family */
     padding: 20px; /* Optional: Padding for text */
     border-radius: 10px; /* Optional: Rounded corners for the text box */
-    margin-left: 50px; /* Margin for left alignment */
+    margin-left: 10px; /* Margin for left alignment */
     overflow: hidden; /* Hide overflow to create a typing effect */
     white-space: nowrap; /* Prevent wrapping to a new line */
+    padding-top: 300px;
 }
 
 .welcome span {

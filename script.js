@@ -26,3 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     type(); // Start the typing effect
 });
+
+//Dark mode part
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    const ceoElements = document.querySelectorAll('.CEO');
+    ceoElements.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+});
