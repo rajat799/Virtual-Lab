@@ -35,6 +35,7 @@ a {
     align-items: center;
     font-size: 25px;
     padding-right: 100px; /* Use padding for better spacing */
+    margin-left: 330px;
 }
 
 .nav-element ul {
