@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <header>
+            <div class="navbar" >
+                <div class="menu-bar" >
+                    <a href="#" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></a>
+                </div>
+
+                <div class="logo">
+                    <a href="unauthorized_access.html"><img src="skillsda_logo.png" alt=""></a>
+                </div>
+                <!-- home icon -->
+                <div class="home-icon">
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </div>
+                
+            
+            </div>
+        </header>
+
+    <div class="main">
+        <div class="side-bar" id="sidebar">
+            <ul>
+                <li><a href="#" onclick="showContent('introduction')">Introduction</a></li> 
+                <li><a href="#" onclick="showContent('Theory')">Theory</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="content" id="mainContent">
+            <div id="introduction" class="content-section active">
+                <h2>CLOUD ARCHITECTURE:</h2>
+                <p>
+                    Cloud architecture is the structured design of the components and services that work together to deliver cloud computing over the internet. It organizes how cloud resources such as storage, servers, databases, and applications are connected and operate together to provide efficient, flexible, and secure computing environments.
+                 <br><br>
+                 Key Components of Cloud Architecture
+                 Front-End Platform: This is the user interface that interacts with the cloud services. It includes the devices and applications that users employ to access the cloud, such as computers, mobile devices, and web browsers.
+                <br><br>
+                Back-End Platform: This consists of the cloud resources and services that provide the necessary functionality. It includes servers, databases, and applications that process and store data.
+
+                <br><br>
+                Network: The network connects the front-end and back-end platforms, allowing data to flow between them. This includes the internet and various communication protocols.
+            </p>
+                <p>
+                    Layers of Cloud Architecture
+                    Cloud architecture can be divided into several layers, each providing different functions:
+                    
+                    <br><br>
+                    Virtualization Layer: This layer abstracts physical resources and creates virtual environments. Virtualization enables multiple virtual machines to run on a single physical machine, improving resource utilization.
+                    <br><br>
+                    Application Layer: This layer consists of the software applications that run on the cloud. It includes both the applications provided by the cloud service provider and those created by users.
+                    <br><br>
+                    Cloud Service Models
+                    Cloud architecture encompasses several service models, each offering different levels of control and functionality:
+                    </p>
+                <p>
+                    Infrastructure as a Service (IaaS): This model provides virtualized computing resources over the internet. Users have control over the operating system and applications but do not manage the underlying hardware.
+                    <br><br>
+                    Platform as a Service (PaaS): This model provides a platform allowing developers to build, deploy, and manage applications without worrying about the underlying infrastructure.
+                    <br><br>
+                    Software as a Service (SaaS): This model delivers software applications over the internet on a subscription basis. Users access the software through a web browser, without needing to install or maintain it.
+
+                    <br><br>
+                    Benefits of Cloud Architecture
+                    The benefits of cloud architecture are significant and include:
+
+                    <p>Scalability: Easily scale resources up or down based on demand.
+                        Flexibility: Access a wide range of services and applications tailored to specific needs.
+                        Cost Efficiency: Reduce costs associated with hardware and maintenance by paying only for what you use.
+                        Reliability: Enhanced reliability through redundant systems and data backups.
+                        High Availability: Services are available 24/7, minimizing downtime.
+                        Enhanced Security: Advanced security measures protect data and applications.
+                        Performance Optimization: Resources can be optimized for better performance.
+                        Maintenance: Providers handle maintenance and updates, freeing users from these responsibilities.
+                        Sustainability: Efficient resource utilization contributes to environmental sustainability.
+                        This structured approach to cloud architecture allows organizations to harness the power of cloud computing while addressing their specific needs and challenges.</p>
+                </p>
+
+                <br>
+                <p>In conclusion, cloud architecture is a foundational framework that enables efficient, 
+                    scalable, and secure cloud computing. By organizing resources and services in a 
+                    structured way, it supports cost-effective scaling, high availability, remote 
+                    accessibility, and robust data protection. Businesses benefit from cloud 
+                    architecture's flexibility, allowing them to respond quickly to market changes, 
+                    drive innovation, and improve productivity. As cloud technology advances, cloud 
+                    architecture will continue to play a pivotal role in helping organizations optimize 
+                    resources, reduce costs, and enhance digital collaboration in an increasingly connecte
+                    world.</p>
+            </div>
+
+            <div id="Theory" class="content-section">
+                <h2>Theory</h2>
+                <p>
+                    The primary objective of studying computer organization is to understand the fundamental components of a computer system and how they interact to perform various computational tasks. It focuses on the internal working mechanisms, data processing, and the flow of control within the system.
+                    <br><br>
+                    Through this knowledge, students and professionals gain insights into how different hardware components like processors, memory units, and input/output devices work together efficiently. The objective is to enable learners to identify and analyze performance bottlenecks, understand the principles of hardware-software integration, and optimize system performance.
+                    <br><br>
+                    Another key objective is to equip learners with the skills to design and develop better computing systems by making informed decisions regarding trade-offs in cost, performance, and power consumption. Understanding computer organization also helps in troubleshooting hardware issues and developing hardware-aware software that takes advantage of the underlying architecture for optimal performance.
+                    <br><br>
+                    Ultimately, the goal is to build a solid foundation that prepares individuals for advanced topics in computer architecture, embedded systems, and system design, fostering innovation and technological advancements in computing.
+                </p>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-body">
+            <div class="address">
+                <pre>
+                    Plot No 193, 
+                    Nehru Nagar 1st Main Road, 
+                    Kottivakkam, Chennai -- 600096, 
+                    INDIA
+                </pre>
+            </div>
+  
+            <div class="col3 cols">
+                <h3>Follow Us</h3>
+                <div class="follow">
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="linkdin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

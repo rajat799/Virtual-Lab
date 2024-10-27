@@ -10,62 +10,145 @@
 <body>
 
     <!-- Header Section -->
-    <header>
-        <div class="header-container">
-            <!-- Logo -->
-            <div class="logo">
-                <img src="logo.jpg" alt="SkillsDa logo"> <!-- Replace with actual logo path -->
-                
-            </div>
-            
-            <!-- Navigation Links -->
-            <nav>
-                <ul>
-                    <li><a href="#intro">Intro</a></li>
-                    <li><a href="#labs">Labs</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="skillsda_logo.png" alt="SkillsDa logo"> <!-- Replace with actual logo path --></a>
         </div>
-    </header>
-    
-    
-
-    <div class="welcome-section">
-        <div class="welcome"><span id="welcome-text"></span></div>
+        
+        <!-- Navigation Links -->
+        <nav>
+            <ul>
+                <li><a href="#intro" class="nav-link">Intro</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#scenarios" class="nav-link">Scenarios</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
     
-
-    <!-- Features Section -->
-    <section class="features-section">
-        <h2>Features of Our Virtual Lab</h2>
-        <div class="features-container">
-            <div class="feature-item">Each topic has prerequisites to proceed.</div>
-            <div class="feature-item">Learning sessions on prerequisites are provided.</div>
-            <div class="feature-item">Important resources including readings and videos.</div>
-            <div class="feature-item">Training in technical skills with cloud-native architecture.</div>
+    <!-- <div class="welcome-section">
+        <div class="welcome">Welcome to Virtual Lab</div>
+    </div> -->
+    <section id="intro" class="intro">
+        <div class="welcome-section">
+            <div class="welcome"><span id="welcome-text"></span></div>
         </div>
-    </section>
+     </section>
+
+
+     <section id="features">
+     <div class="course-head">
+        <h1>Features</h1>
+     </div>
+    <!-- 1st -->
+    <div class="course-intro">
+    <h1>COURSE INTRODUCTION</h1>
+     <p>The aim of the course is to create a cloud-based virtual lab that centralizes resources for cybersecurity investigators, utilizing various cloud forensic tools and methodologies to enhance their skills. The domains covered in this course will provide a structured framework for addressing complex challenges effectively. These include:</p>
+     <ul>
+         <li>Data collection and preservation</li>
+         <li>Incident response</li>
+         <li>Network traffic analysis</li>
+         <li>Memory forensics</li>
+         <li>Malware traffic analysis</li>
+         <li>Vulnerability Assessment</li>
+     </ul>
+     <p>The cloud is fundamental to a virtual lab which is providing computing services over the internet that allow users to access resources without needing physical hardware. Instead of relying on personal computers, cloud services enable users to store and manage their data online.</p>
+ </div>
+
+ <!-- 2nd -->
+ <div class="course-intro">
+    <h1>COURSE SYLLABUS :</h1>
+    <p>In this course, we will explore three key topics such as unauthorized access, 
+        data breaching and incident response.
+             Unauthorized access refers to instances where individuals gain access to cloud 
+        resources or data without permission. Understanding this concept is essential in cloud 
+        forensics, as it enables investigators to identify, analyze, and respond to potential 
+        security incidents effectively. By grasping the implications of unauthorized access, 
+        students will be better equipped to navigate the complexities of cloud security and 
+        forensic investigations.
+            Unauthorized access can be done by multiple methods.These includes
+        </p>
+    <ul>
+        <li>Credential theft</li>
+        <li>Exploiting vulnerabilities</li>
+        <li>insider threats</li>
+        <li>Brute force attacks</li>
+    </ul>
+    <p>Data breaching is the process of violating the security of the system to gain 
+        unauthorized access for sensetive or protected data.It is crucial for understanding 
+        cybersecurity risks and protecting sensitive information.The knowledge of data breaches 
+        is essential for compliance and incident response. Additionally, it helps in data security
+        for protecting sensetive information and managing potential threats in today's online
+        environment.
+            The methods of data breaching majorly includes
+    </p>
+
+        <ul>
+            <li>Hacking</li>
+            <li>Phishing</li>
+            <li>Malware</li>
+            <li>Insider threats</li>
+        </ul>
+
+        <p>Incident response is the process of detecting,containing and resolving security 
+            incidents in cloud invironments.It will help in identifying threats,limiting damage,
+            restoring system and analyzing root cause to prevent future breaches.
+                The process of incident response involves some essential steps. i.e.
+        </p>
+
+        <ul>
+            <li>Preparation</li>
+            <li>Detection and analysis</li>
+            <li>Containment</li>
+            <li>Recovery</li>
+            <li>Post-incident review</li>
+        </ul>
+</div>
+
+<!-- 3rd -->
+<div class="course-intro">
+    <h1>Resource Navigation</h1>
+    <p>The aim of the course is to create a cloud-based virtual lab that centralizes resources for cybersecurity investigators, utilizing various cloud forensic tools and methodologies to enhance their skills.</p>
+    <p>The domains covered in this course will provide a structured framework for addressing complex challenges effectively. These include:</p>
+    <ul>
+        <li>Data collection and preservation</li>
+        <li>Incident response</li>
+        <li>Network traffic analysis</li>
+        <li>Memory forensics</li>
+        <li>Malware traffic analysis</li>
+        <li>Vulnerability Assessment</li>
+    </ul>
+    <p>The cloud is fundamental to a virtual lab which is providing computing services over the internet that allow users to access resources without needing physical hardware. Instead of relying on personal computers, cloud services enable users to store and manage their data online.</p>
+</div>
+</section>
 
     <!-- Scenarios Section -->
-    <section class="scenarios-section">
+    <section id="scenarios" class="scenarios-section">
         <h2>Scenarios</h2>
         <div class="scenarios-container">
+            <a href="CloudIntro.html" target="_blank" class="scenario-item">
+                Introduction to Cloud Architecture
+            </a>
             <a href="unauthorized_access.html" target="_blank" class="scenario-item">
                 Unauthorized Access
             </a>
-            <a href="unauthorized_access.html" target="_blank" class="scenario-item">
+
+            <a href="Data_breaching.html" target="_blank" class="scenario-item">
                 Data Breaches
             </a>
-            <a href="unauthorized_access.html" target="_blank" class="scenario-item">
+            <a href="Incident_responce.html" target="_blank" class="scenario-item">
                 Incident Response
             </a>
+            
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section class="about-us-section">
+    <section id="about" class="about-us-section">
         <div class="about-us-content">
             <h2>About Us</h2>
             <p>
@@ -82,10 +165,11 @@
 
     <!-- Footer Section -->
     <footer class="footer-section">
+        <section id="contact" class="contact-section">
         <div class="footer-container">
             <!-- SkillsDa Logo -->
             <div class="footer-logo">
-                <img src="logo.jpg" alt="SkillsDa Logo" /> <!-- Replace with actual logo path -->
+                <img src="skillsda_logo.png" alt="SkillsDa Logo" /> <!-- Replace with actual logo path -->
             </div>
 
             <!-- Social Media Links -->
@@ -105,16 +189,8 @@
             </div>
         </div>
 
-        <!-- Quick Links Section -->
-        <div class="quick-links">
-            <h4>Contact Us</h4>
-            <ul>
-                <li><a href="#home">+91 90905 99696</a></li>
-                <li><a href="#features">+91 90905 89696</a></li>
-                <li><a href="#scenarios">044 4859 9696</a></li>
-                <li><a href="#about">Email: info@skillsda.com</a></li>  
-            </ul>
-        </div>
+        
+        
 
         <hr>
         <!-- Copyright Notice -->
@@ -122,7 +198,9 @@
             <p>&copy; 2024 SkillsDa. All rights reserved.</p>
             <p>Privacy policy | Terms & Conditions</p>
         </div>
-    </footer>
+    </section>
+    </footer> 
+    
     <script src="script.js"></script>
 </body>
 </html>

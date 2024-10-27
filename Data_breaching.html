@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <header>
+            <div class="navbar" >
+                <div class="menu-bar" >
+                    <a href="#" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></a>
+                </div>
+
+                <div class="logo">
+                    <a href="unauthorized_access.html"><img src="skillsda_logo.png" alt=""></a>
+                </div>
+                <!-- home icon -->
+                <div class="home-icon">
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </div>
+                
+            
+            </div>
+        </header>
+
+    <div class="main">
+        <div class="side-bar" id="sidebar">
+            <ul>
+                <li><a href="#" onclick="showContent('introduction')">Introduction</a></li> 
+                <li><a href="#" onclick="showContent('Theory')">Theory</a></li>
+                <li><a href="#" onclick="showContent('Lab Experiments')">Lab Experiments</a></li>
+            </ul>
+        </div>
+
+        <div class="content" id="mainContent">
+            <div id="introduction" class="content-section active">
+                <h2>Data Breaching</h2>
+                <p>
+                    <b>Definition:</b>
+                    Data breaching refers to the unauthorized access and retrieval of sensitive data, often through methods like hacking, malware, phishing, or physical theft.
+                    
+                    <br><br>
+                    Importance of Data Breaching
+                    Risk Awareness: Understanding potential threats and vulnerabilities helps organizations identify risks and educate employees about security practices.
+                    <br><br>
+                    Protecting Sensitive Information: Implementing measures like encryption, access controls, and data loss prevention is vital to safeguard sensitive data from breaches.
+
+                <br><br>
+                Incident Response Planning: A structured approach to detecting and responding to breaches helps organizations contain and recover from incidents effectively.
+            </p>
+                <p>
+                   
+                    Continuous Improvement: Organizations should learn from incidents to enhance security practices, update policies, and provide ongoing training.
+
+
+                    <br><br>
+                    Customer Confidence: Building trust through transparency, prompt notifications, and security certifications reassures customers about their data safety.
+                    <br><br>
+                    
+            </div>
+            <div id="Theory" class="content-section">
+                <h2>Theory</h2>
+                Mechanisms of Data Breaching
+                    Hacking: Exploiting vulnerabilities in systems through various techniques, such as brute force attacks or SQL injection.
+                    
+                    <br><br>
+
+                   Phishing: Deceptive tactics aimed at tricking individuals into revealing sensitive information via fraudulent communications.
+                 </p>
+                <p>
+                    Insider Threats: Breaches caused by employees misusing their access, either maliciously or accidentally.
+
+                    <br><br>
+                    Malware: Malicious software like ransomware or keyloggers that infiltrate systems to steal or encrypt data.
+                    <br><br>
+                    Physical Theft: Unauthorized access through the theft of devices containing sensitive information.
+                    <br><br>
+                    Third-Party Vulnerabilities: Breaches arising from weaknesses in third-party services or partners.
+
+
+                    <p>Credential Theft: Stealing user credentials to gain unauthorized access to systems.
+                    </p>
+
+                <br>
+                <p>Investigation Methods for Data Breaches
+                    Initial Detection and Reporting: Monitor systems and establish clear reporting processes.
+                </p>
+
+                <p>Evidence Preservation: Create backups and document the chain of custody for evidence.
+                </p>
+
+                <p>Log Analysis: Review access logs to identify unauthorized actions.
+                </p>
+
+                <p>Malware Analysis: Investigate any malware found to understand its impact.
+                </p>
+
+                <p>Forensic Analysis: Conduct disk imaging and network forensics to uncover breaches</p>
+
+                <p>Root Cause Analysis: Identify exploited vulnerabilities and human factors involved.
+                </p>
+
+                <p>Impact Assessment: Evaluate the extent of the breach and necessary notifications.
+                </p>
+
+                <p>Reporting and Documentation: Prepare detailed incident reports for future prevention      </p>
+                
+                <p>Continuous Improvement: Revise security measures based on lessons learned.
+                </p>
+
+                <p>Conclusion
+                    Data breaches pose significant risks, necessitating proactive prevention, effective response, and continuous improvement in security practices. Transparency and vigilance are crucial for maintaining trust in the digital landscape.</p>
+            
+                </p>
+
+            </div>
+            <div id="Lab Experiments" class="content-section">
+                <h2>Lab Experiments</h2>
+                <p>
+                    Upon completing this lab, students will be equipped with the skills to analyze network traffic using Wireshark and navigate and interpret information presented in various file views using Autopsy. Specifically, they will be able to:
+                </p>
+                <ul>
+                    <li><strong>Identify the Protocol Used for Communication:</strong> Students will learn how to recognize various protocols (e.g., HTTP, FTP, TCP, UDP) involved in packet exchanges, which is essential for understanding how data is transmitted across networks.</li>
+                    
+                    <li><strong>Identify Credentials Used by Source and Destination:</strong> The lab will teach students to extract sensitive information such as usernames and passwords from the captured packets, highlighting the importance of security in data transmission.</li>
+                    
+                    <li><strong>Analyze TCP Stream for a Standard View:</strong> Students will gain proficiency in analyzing the TCP stream to visualize the data flow between a client and server, which is crucial for troubleshooting and understanding session states.</li>
+                    
+                    <li><strong>Understand Activities Performed by Source or Destination:</strong> The lab will guide students in identifying specific activities or commands executed by either the source or destination during a session, providing insight into network interactions.</li>
+                    
+                    <li><strong>Examine Status Codes and Commands Used:</strong> Students will learn to recognize status codes and commands within protocols (e.g., FTP commands), which are important for diagnosing the success or failure of requests.</li>
+                    
+                    <li><strong>Analyze File Metadata and Content:</strong> Understand how to access and interpret file metadata—such as timestamps, file size, and owner information—alongside the actual content of files. This skill is essential for uncovering crucial evidence and establishing timelines.</li>
+                    
+                    <li><strong>Understand the Importance of File Views in Autopsy:</strong> Grasp how different file views in Autopsy contribute to reconstructing events and timelines during investigations. This understanding is vital for presenting findings in a coherent and logical manner, which is often critical in legal contexts.</li>
+                </ul>
+            
+                <h2>Tools and Techniques Involved</h2>
+                <p>
+                    <strong>Windows/Linux Machine:</strong> Students will use either operating system to run Wireshark and Autopsy for capturing network traffic and analyzing digital evidence.
+                    <br>
+                    <strong>Wireshark:</strong> A powerful network protocol analyzer that allows users to capture and interactively browse the traffic running on a computer network.
+                    <br>
+                    <strong>Autopsy:</strong> An open-source digital forensics platform that helps in analyzing hard drives, smartphones, and other storage devices. Autopsy simplifies the process of extracting and interpreting digital evidence.
+                </p>
+            
+                <h2>Anticipated Learning Outcomes</h2>
+                <p>
+                    Upon completion of this lab, students should be able to confidently answer the following questions:
+                </p>
+                <ul>
+                    <li><strong>Identify Protocols Used by Attackers:</strong> Analyze captured traffic to determine which protocol (e.g., FTP, SSH) was exploited by an attacker to gain access to a victim’s directory.</li>
+                    
+                    <li><strong>Extract Username and Password:</strong> Locate the username and password used by the attacker, reinforcing the importance of securing credentials during data transmission.</li>
+                    
+                    <li><strong>Analyze TCP Stream:</strong> Dissect the TCP stream, understanding the sequence of packets and how they contribute to the overall session.</li>
+                    
+                    <li><strong>Understand FTP Status Codes:</strong> Interpret FTP commands and their corresponding status codes, which are vital for understanding server responses and the success of operations.</li>
+                    
+                    <li><strong>Reconstruct Events:</strong> Learn to piece together the sequence of events leading up to an incident by analyzing file views and network traffic.</li>
+                </ul>
+            
+                <h2>Detailed Explanation</h2>
+                <h3>Understanding File Views in Autopsy</h3>
+                <p>
+                    Upon launching Autopsy, users will find a user-friendly interface that displays various modules for different aspects of forensic analysis. Familiarity with the layout is essential for efficient navigation.
+                </p>
+                <h4>File Views:</h4>
+                <ul>
+                    <li><strong>File List:</strong> Displays all files found on the evidence source. Users can filter and sort files based on various criteria (e.g., file type, date modified).</li>
+                    <li><strong>File Metadata View:</strong> Provides detailed metadata about selected files, crucial for building timelines and identifying anomalies.</li>
+                    <li><strong>Hex View:</strong> Displays raw hexadecimal data of files, useful for in-depth analysis or investigating hidden data.</li>
+                    <li><strong>Content View:</strong> Shows the actual content of files, enabling direct examination of evidence.</li>
+                </ul>
+            
+                <h4>Significance of File Metadata:</h4>
+                <p>
+                    File metadata can reveal:
+                    <ul>
+                        <li><strong>Creation and Modification Dates:</strong> Helps in establishing a timeline of events.</li>
+                        <li><strong>File Access Patterns:</strong> Insight into how and when files were accessed can indicate potential malicious activity.</li>
+                        <li><strong>File Ownership:</strong> Knowing who created or last modified a file can link it to a specific user or device.</li>
+                    </ul>
+                </p>
+            
+                <h2>Conclusion</h2>
+                <p>
+                    This lab provides a foundational understanding of how to navigate and interpret file views in Autopsy and analyze network traffic using Wireshark. By learning to analyze file metadata, content, and network protocols, students will be better prepared to reconstruct events and timelines, which are vital for effective investigations. The skills gained here will enhance their technical proficiency and prepare them for real-world scenarios in digital evidence analysis.
+                </p>
+            
+                <h2>References</h2>
+                <ul>
+                    <li><strong>Autopsy Official Site</strong></li>
+                    <li><strong>Forensic Field Blog on Autopsy</strong></li>
+                    <li><strong>Sleuth Kit Documentation</strong></li>
+                    <li><strong>Wireshark Ask Community:</strong> A community-driven platform where users can ask questions and share knowledge about Wireshark.</li>
+                    <li><strong>Wireshark Documentation:</strong> Official documentation detailing various filters and commands available in Wireshark for effective traffic analysis.</li>
+                </ul>
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+</body>
+</html> 
